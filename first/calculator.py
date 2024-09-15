@@ -26,7 +26,7 @@ class CalculatorTask:
                 Operation('*', 'Умножение', lambda a, b: a * b),
                 Operation('+', 'Сложение', lambda a, b: a + b),
                 Operation('-', 'Вычитание', lambda a, b: a - b),
-                Operation('/', 'Деление', lambda a, b: a / b),
+                Operation('/', 'Деление', lambda a, b: a / b if b != 0 else print("Деление на 0 недопустимо")),
                 Operation('//', 'Целочисленное деление двух чисел', lambda a, b: a // b),
                 Operation('**', 'Возведение в степень', lambda a, b: a ** b),
                 Operation('%', 'Получение остатка от деления', lambda a, b: a % b),
