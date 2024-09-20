@@ -1,4 +1,4 @@
-from first.taskfunction import task_1, task_6, task_5, task_4, task_3, task_2, task_10, task_9, task_8, task_7, task_11, \
+from first.runner_function import task_1, task_6, task_5, task_4, task_3, task_2, task_10, task_9, task_8, task_7, task_11, \
     task_12, task_13, task_14
 
 
