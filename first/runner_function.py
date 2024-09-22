@@ -5,7 +5,7 @@ from operator import mul
 from first.calculator import CalculatorTask
 
 
-def task_1():
+def task_1_1():
     while True:
         try:
             n = int(input('Введите натуральное число: '))
@@ -18,7 +18,7 @@ def task_1():
         print('Необходимо положительное число')
 
 
-def task_2():
+def task_2_1():
     task = CalculatorTask()
     a, b, op = int(input('Введите первое число: ')), \
         int(input('Введите второе число: ')), \
@@ -26,7 +26,7 @@ def task_2():
     task.calculate(a, b, op)
 
 
-def task_3():
+def task_3_1():
     while True:
         try:
             x, y, z = int(input('Введите x: ')), \
@@ -41,7 +41,7 @@ def task_3():
     print(f"Результат: {f}")
 
 
-def task_4():
+def task_4_1():
     while True:
         try:
             r_1, r_2 = float(input("Введите сопротивление резистора R1: ")), \
@@ -52,7 +52,7 @@ def task_4():
     print(f"Общее сопротивление цепи ={round(r_1 + r_2, 1)}")
 
 
-def task_5():
+def task_5_1():
     while True:
         try:
             a, b, m, n = float(input("Введите значение a: ")), \
@@ -69,7 +69,7 @@ def task_5():
         print(f"Решение уровения x = {round(x, 3)} НЕ попадает в заданный отрезок [{m};{n}]")
 
 
-def task_6():
+def task_6_1():
     while True:
         try:
             v, t = int(input("Введите скорость спортсмена (км/ч): ")), \
@@ -84,7 +84,7 @@ def task_6():
     print(f"Спортсмен оставнится на отметке: {mod}")
 
 
-def task_7():
+def task_7_1():
     a = int(input("Введите целое число: "))
     sum, multiply = 0, 1
     while a > 0:
@@ -95,7 +95,7 @@ def task_7():
     print(f"Сумма цифр: {sum} , произведение цифр: {multiply}")
 
 
-def task_8():
+def task_8_1():
     while True:
         try:
             a, b, c = int(input("Введите первое число: ")), \
@@ -111,7 +111,7 @@ def task_8():
         f"Минимальное число: {min_number}, максимальное число: {max_number}, число между максимальным и минимальным: {between_number}")
 
 
-def task_9():
+def task_9_1():
     while True:
         try:
             a, b = int(input("Введите первое число: ")), \
@@ -125,7 +125,7 @@ def task_9():
     print(f"Первое число: {a}, второе число: {b}")
 
 
-def task_10():
+def task_10_1():
     football_team = input("Введите название команды:")
     print(f"{football_team} - чемпион!")
     print("-" * len(football_team))
@@ -134,11 +134,11 @@ def task_10():
     print(f"Количество буквы 'а': {football_team.lower().count('а')}")
 
 
-def task_11():
+def task_11_1():
     print(f"Государство - {input('Введите государство:')}, столица - {input('Введите столицу государства:')}")
 
 
-def task_12():
+def task_12_1():
     s = "объектно-ориентированный"
     print(s[0:6])
     print(s[9:17])
@@ -147,7 +147,7 @@ def task_12():
     print("fffff")  # рента
 
 
-def task_13():
+def task_13_1():
     # Создать 2 пустых списка
     a = []
     b = []
@@ -244,7 +244,7 @@ def task_13():
 # Ср. арифм. = 29.00, ср. геометр. = 7.82
 # Макс. и мин.: 100 1.3
 
-def task_14():
+def task_14_1():
     # В данной задаче все значения задаются в коде (без input())
 
     # 1. Создание словаря
