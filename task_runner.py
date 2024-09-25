@@ -1,6 +1,7 @@
-from first.runner_function import task_1_1, task_6_1, task_5_1, task_4_1, task_3_1, task_2_1, task_10_1, task_9_1, task_8_1, task_7_1, task_11_1, \
+from first.runner_function import task_1_1, task_6_1, task_5_1, task_4_1, task_3_1, task_2_1, task_10_1, task_9_1, \
+    task_8_1, task_7_1, task_11_1, \
     task_12_1, task_13_1, task_14_1
-from second.runner_function import task_1_2
+from second.runner_function import task_2_2, task_2_3
 
 
 class Runner():
@@ -23,7 +24,9 @@ class Runner():
                 Task(14, lambda: task_14_1()),
             ]),
             HomeWork(2, tasks=[
-                Task(1, lambda :task_1_2())
+                # Task(1, lambda :task_1_2()),
+                Task(1, lambda: task_2_2()),
+                Task(1, lambda: task_2_3()),
             ])
         ]
 
