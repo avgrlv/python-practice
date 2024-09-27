@@ -95,3 +95,35 @@ def task_2_6():
     print("Первый список: {}".format(first_list))
     print("Второй список: {}".format(second_list))
     print("Уникальный набор: {}".format(sorted(set(first_list + second_list))))
+
+
+def task_2_7():
+    skates_amount = int(input("Кол-во коньков:"))
+    skates = list()
+    i = 0
+    while i < skates_amount:
+        skates.append(int(input(f"Размер {i + 1}-й пары: ")))
+        i += 1
+
+    people_amount = int(input("Кол-во людей:"))
+    foot_sizes = dict()
+    i = 0
+    while i < people_amount:
+        size = int(input(f"Размер ноги {i + 1}-й человека: "))
+        foot_sizes[size] = sum([1 for skate in skates if skate >= size])
+        i += 1
+
+    print("Наибольшее кол-во людей, которые могут взять коньки: {}".format(max(foot_sizes.values())))
+
+
+def task_2_8():
+    circle = list(range(1, int(input("Введите количество игроков: ")) + 1))
+    n = int(input("Число в считалке: "))
+    start = 0
+    while len(circle) > 1:
+        print("Текущий круг людей: {}".format(circle))
+        print("Начало счёт с номера {}".format(circle[start]))
+        i = (start + n - 1) % len(circle)
+        print('Выбывает человек под номером', circle[i])
+        circle.remove(circle[i])
+    print("Выйграл человек под номером {}".format(circle[0]))
