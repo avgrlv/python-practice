@@ -2,6 +2,8 @@ from first.runner_function import task_1_1, task_6_1, task_5_1, task_4_1, task_3
     task_8_1, task_7_1, task_11_1, \
     task_12_1, task_13_1, task_14_1
 from second.runner_function import task_2_2, task_2_3, task_1_2, task_2_8, task_2_5, task_2_6, task_2_7, task_2_4
+from third.runner_function import task_3_2, task_3_3, task_3_4, task_3_5, task_3_6, task_3_7, task_3_8, task_3_9, \
+    task_3_10
 
 
 class Runner():
@@ -24,14 +26,26 @@ class Runner():
                 Task(14, lambda: task_14_1()),
             ]),
             HomeWork(2, tasks=[
-                Task(1, lambda: task_1_2()),
-                Task(1, lambda: task_2_2()),
-                Task(1, lambda: task_2_3()),
-                Task(1, lambda: task_2_4()),
-                Task(1, lambda: task_2_5()),
-                Task(1, lambda: task_2_6()),
-                Task(1, lambda: task_2_7()),
-                Task(1, lambda: task_2_8()),
+                Task(1, lambda: task_2_1()),
+                Task(2, lambda: task_2_2()),
+                Task(3, lambda: task_2_3()),
+                Task(4, lambda: task_2_4()),
+                Task(5, lambda: task_2_5()),
+                Task(6, lambda: task_2_6()),
+                Task(7, lambda: task_2_7()),
+                Task(8, lambda: task_2_8()),
+            ]),
+            HomeWork(3, tasks=[
+                Task(1, lambda: task_3_1()),
+                Task(2, lambda: task_3_2()),
+                Task(3, lambda: task_3_3()),
+                Task(4, lambda: task_3_4()),
+                Task(5, lambda: task_3_5()),
+                Task(6, lambda: task_3_6()),
+                Task(7, lambda: task_3_7()),
+                Task(8, lambda: task_3_8()),
+                Task(9, lambda: task_3_9()),
+                Task(10, lambda: task_3_10()),
             ])
         ]
 

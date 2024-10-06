@@ -1,9 +1,11 @@
 import subprocess
 import sys
 
-from simple_term_menu import TerminalMenu
-
 from task_runner import Runner
+from third.runner_function import task_3_10
+
+
+from simple_term_menu import TerminalMenu
 
 
 def main_menu():
@@ -35,7 +37,7 @@ def menu_run(options):
 
 def main():
     if __debug__:
-        task_2_10()
+        task_3_10()
     else:
         main_menu()
 
