@@ -1,11 +1,10 @@
 import subprocess
 import sys
 
-from task_runner import Runner
-from third.runner_function import task_3_10
-
-
 from simple_term_menu import TerminalMenu
+
+from fourth.runner_function import geometry, oclock, animal_zoo
+from task_runner import Runner
 
 
 def main_menu():
@@ -37,7 +36,7 @@ def menu_run(options):
 
 def main():
     if __debug__:
-        task_3_10()
+        animal_zoo()
     else:
         main_menu()
 

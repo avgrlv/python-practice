@@ -1,7 +1,8 @@
 from first.runner_function import task_1_1, task_6_1, task_5_1, task_4_1, task_3_1, task_2_1, task_10_1, task_9_1, \
     task_8_1, task_7_1, task_11_1, \
     task_12_1, task_13_1, task_14_1
-from second.runner_function import task_2_2, task_2_3, task_1_2, task_2_8, task_2_5, task_2_6, task_2_7, task_2_4
+from fourth.runner_function import geometry, oclock, animal_zoo, sum_numbers, grade_converter
+from second.runner_function import task_2_2, task_2_3, task_2_8, task_2_5, task_2_6, task_2_7, task_2_4
 from third.runner_function import task_3_2, task_3_3, task_3_4, task_3_5, task_3_6, task_3_7, task_3_8, task_3_9, \
     task_3_10
 
@@ -46,6 +47,13 @@ class Runner():
                 Task(8, lambda: task_3_8()),
                 Task(9, lambda: task_3_9()),
                 Task(10, lambda: task_3_10()),
+            ]),
+            HomeWork(4, tasks=[
+                Task(1, lambda: geometry()),
+                Task(5, lambda: oclock()),
+                Task(7, lambda: animal_zoo()),
+                Task(10, lambda: sum_numbers()),
+                Task(11, lambda: grade_converter()),
             ])
         ]
 
