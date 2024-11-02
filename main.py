@@ -1,10 +1,12 @@
 import subprocess
 import sys
 
-from simple_term_menu import TerminalMenu
-
-from fourth.runner_function import geometry, oclock, animal_zoo
+from final.runner_function import lru_cache_demo, fib_with_cache
+from final.ticTacToe.game_runner import start_game
 from task_runner import Runner
+
+
+# from simple_term_menu import TerminalMenu
 
 
 def main_menu():
@@ -31,12 +33,13 @@ def main_menu():
 
 
 def menu_run(options):
-    return TerminalMenu(options).show()
+    pass
+    # return TerminalMenu(options).show()
 
 
 def main():
     if __debug__:
-        animal_zoo()
+        start_game()
     else:
         main_menu()
 
