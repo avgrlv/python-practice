@@ -1,3 +1,5 @@
+from final.runner_function import lru_cache_demo, fib_with_cache
+from final.ticTacToe.game_runner import start_game
 from first.runner_function import task_1_1, task_6_1, task_5_1, task_4_1, task_3_1, task_2_1, task_10_1, task_9_1, \
     task_8_1, task_7_1, task_11_1, \
     task_12_1, task_13_1, task_14_1
@@ -54,6 +56,11 @@ class Runner():
                 Task(7, lambda: animal_zoo()),
                 Task(10, lambda: sum_numbers()),
                 Task(11, lambda: grade_converter()),
+            ]),
+            HomeWork(99, tasks=[
+                Task(1, lambda: lru_cache_demo()),
+                Task(2, lambda: fib_with_cache()),
+                Task(4, lambda: start_game()),
             ])
         ]
 

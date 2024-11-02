@@ -5,8 +5,7 @@ from final.runner_function import lru_cache_demo, fib_with_cache
 from final.ticTacToe.game_runner import start_game
 from task_runner import Runner
 
-
-# from simple_term_menu import TerminalMenu
+from simple_term_menu import TerminalMenu
 
 
 def main_menu():
@@ -33,15 +32,14 @@ def main_menu():
 
 
 def menu_run(options):
-    pass
-    # return TerminalMenu(options).show()
+    return TerminalMenu(options).show()
 
 
 def main():
-    if __debug__:
-        start_game()
-    else:
-        main_menu()
+    # if __debug__:
+    #     start_game()
+    # else:
+    main_menu()
 
 
 if __name__ == '__main__':
